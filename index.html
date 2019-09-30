@@ -3,14 +3,16 @@
 <head>
   <!-- manifest.jsonを呼び出しています -->
   <link rel="manifest" href="./manifest.json">
+  
   <script type="text/javascript">
-    document.onkeydown = keydown;
-    document.onkeydown = keydown;
+    document.onkeydown = keydown();
+   
     function keydown() {
     target = document.getElementById("Call");
     }
-    target.innerHTML =event.type;
-    </script>
+    target.innerHTML ="aaaaa";
+  </script>
+  
   <script>    
  function test() {
     navigator.geolocation.getCurrentPosition(test2);
