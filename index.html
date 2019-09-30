@@ -3,7 +3,15 @@
 <head>
   <!-- manifest.jsonを呼び出しています -->
   <link rel="manifest" href="./manifest.json">
-  <script>
+  <script type="text/javascript">
+    document.onkeydown = keydown;
+    document.onkeydown = keydown;
+    function keydown() {
+    target = document.getElementById("Call");
+    }
+    target.innerHTML =event.type;
+    </script>
+  <script>    
  function test() {
     navigator.geolocation.getCurrentPosition(test2);
  }
@@ -51,9 +59,7 @@
   <h1>Hello PWA.</h1>
   <img src="./pwa-logo.svg" alt="PWA logo" class="image" />
   <a href="p.html">p.html</a>
-  <button onclick="test()">test</button>
-  <div onkeydown = "aaa">
-    <spam id="call"></spam>
-    </div>
+<!--  <button onclick="test()">test</button> -->
+  <div id="Call"></div>
 </body>
 </html>
