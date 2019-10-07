@@ -1,6 +1,12 @@
 <!-- test.html -->
 <html>
-<head>
+  <head>
+     <script type="text/javascript" language="javascript">
+      function on(){
+      target = document.getElementById("output");
+       target.innerText = "5";
+      }
+    </script>
   <title>Hello PWA. test.html</title>
   <style>
     body {
@@ -18,5 +24,8 @@
 <body>
   <h1>test.html</h1>
   <a href="p.html">index.html</a>
+  ------------------------------
+  | <div id="output"></div> | | | | | | | | | | | | | | |
+  <button onclick="on()">on</button>
 </body>
 </html>
